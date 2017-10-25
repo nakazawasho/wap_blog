@@ -19,3 +19,6 @@
 # public、vendorは管理しません
 /public
 /vendor
+
+#.envは管理しません
+/.env
