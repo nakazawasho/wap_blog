@@ -21,6 +21,10 @@ gem 'kaminari'
 gem 'bullet'
 gem 'dotenv-rails'
 gem 'haml-rails'
+gem 'less-rails'
+gem 'therubyracer'
+gem 'execjs'
+gem 'twitter-bootstrap-rails'
 
 group :development, :test do
   gem 'byebug', platform: :mri
