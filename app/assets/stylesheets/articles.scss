@@ -1,4 +1,46 @@
 @import "colors.scss";
+@import "mixin.scss";
+
 .main {
   background-color: $main-background;
+}
+
+.contents {
+  padding-top: 30px;
+  width: 70%;
+  margin: auto;
+  @include clearfix();
+}
+
+.articles {
+  float: left;
+  width: 70%;
+}
+
+.article-entry {
+  background-color: $article-background;
+  margin-bottom: 20px;
+  padding: 24px 32px;
+  position: relative;
+
+  &-header {
+
+    &__title {
+      color: $title-color;
+      font-weight: bold;
+      font-size: 18px;
+    }
+  }
+}
+
+.aside {
+  float: left;
+  margin-left: 60px;
+}
+
+.pagination{
+  display: block;
+  margin: auto;
+  width: 150px;
+  margin-bottom: 30px;
 }

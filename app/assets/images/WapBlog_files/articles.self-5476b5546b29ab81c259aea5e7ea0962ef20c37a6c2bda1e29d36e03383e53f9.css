@@ -1,0 +1,70 @@
+/* line 11, /Users/nakazawa-sho/techcamp/rails/projects/wap_blog/app/assets/stylesheets/articles.scss */
+.header {
+  height: 250px;
+  background-image: url(/assets/background_image-6e27068d3f27e81de1cc6611e0ba3f198c10bf8af12b84bb446185aa0ad205ec.jpg);
+}
+
+/* line 16, /Users/nakazawa-sho/techcamp/rails/projects/wap_blog/app/assets/stylesheets/articles.scss */
+.main {
+  background-color: #f5f5f5;
+}
+
+/* line 20, /Users/nakazawa-sho/techcamp/rails/projects/wap_blog/app/assets/stylesheets/articles.scss */
+.contents {
+  padding-top: 30px;
+  width: 90%;
+  margin: auto;
+}
+/* line 4, /Users/nakazawa-sho/techcamp/rails/projects/wap_blog/app/assets/stylesheets/articles.scss */
+.contents:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* line 27, /Users/nakazawa-sho/techcamp/rails/projects/wap_blog/app/assets/stylesheets/articles.scss */
+.articles {
+  float: left;
+  width: 70%;
+}
+
+/* line 32, /Users/nakazawa-sho/techcamp/rails/projects/wap_blog/app/assets/stylesheets/articles.scss */
+.article-entry {
+  background-color: #fff;
+  margin-bottom: 20px;
+  padding: 24px 32px;
+  position: relative;
+}
+/* line 40, /Users/nakazawa-sho/techcamp/rails/projects/wap_blog/app/assets/stylesheets/articles.scss */
+.article-entry-header__title {
+  color: #0693cd;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* line 48, /Users/nakazawa-sho/techcamp/rails/projects/wap_blog/app/assets/stylesheets/articles.scss */
+.aside {
+  float: left;
+}
+
+/* line 52, /Users/nakazawa-sho/techcamp/rails/projects/wap_blog/app/assets/stylesheets/articles.scss */
+.pagination {
+  display: block;
+  margin: auto;
+  width: 150px;
+}
+
+/* line 58, /Users/nakazawa-sho/techcamp/rails/projects/wap_blog/app/assets/stylesheets/articles.scss */
+.footer {
+  height: 100px;
+}
+/* line 61, /Users/nakazawa-sho/techcamp/rails/projects/wap_blog/app/assets/stylesheets/articles.scss */
+.footer__contents {
+  margin: auto;
+  margin-top: 30px;
+  text-align: center;
+}
+/* line 69, /Users/nakazawa-sho/techcamp/rails/projects/wap_blog/app/assets/stylesheets/articles.scss */
+.footer__contents__copyright {
+  margin-top: 30px;
+}

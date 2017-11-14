@@ -1,0 +1,7 @@
+@import "colors.scss";
+@import "mixin.scss";
+
+.header {
+  height: 250px;
+  background-image: image-url("header-image.jpg");
+}

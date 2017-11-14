@@ -1,0 +1,68 @@
+@import "colors.scss";
+@import "mixin.scss";
+
+.aside {
+  width: 20%;
+}
+
+.search {
+  margin-bottom: 40px;
+
+  &__title {
+    @include aside-module();
+  }
+
+  &__text-form {
+    position: relative;
+    height: 40px;
+    padding: 10px 0;
+
+    &-input {
+      width: calc(100% - 60px);
+      height: 100%;
+      margin: 0 auto;
+      padding: 0 40px 0 20px;
+      border: none;
+    }
+  }
+}
+
+.links {
+  margin-bottom: 40px;
+
+  &__title{
+    @include aside-module();
+  }
+
+  &__urls{
+
+    ul{
+      list-style: none;
+    }
+
+    li{
+      text-decoration: none;
+      border-top: 1px solid #acacac;
+      padding: 8px 0;
+      color: #0693cd !important;
+    }
+  }
+}
+
+li {
+  list-style-type: none;
+}
+
+.new-articles{
+  margin-top: 40px;
+
+  &__title{
+    @include aside-module();
+  }
+}
+
+.new-article__wrapper{
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: $article-background;
+}
