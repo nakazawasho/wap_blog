@@ -25,6 +25,7 @@ gem 'less-rails'
 gem 'therubyracer'
 gem 'execjs'
 gem 'kaminari'
+gem 'twitter'
 
 group :development, :test do
   gem 'byebug', platform: :mri
