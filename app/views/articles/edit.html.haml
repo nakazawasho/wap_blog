@@ -1,6 +1,6 @@
 .new-article-create-wrapper
   = form_for @article do |f|
-    .new-article-title 新しい記事を投稿します。
+    .new-article-title 記事を編集します。
     %p
       = f.label :title, value: "記事のタイトル", class: "form-setting"
       = f.text_field(:title, placeholder: "記事のタイトルを入力してください", type: "text", class: "new-article-title-textfield", size: "70")
@@ -8,6 +8,6 @@
       = f.label :sub_title, value: "記事のサブタイトル/軽い内容紹介", class: "form-setting"
       = f.text_field(:sub_title, placeholder: "記事のサブタイトルを入力してください", type: "text", class: "new-article-title-textfield", size: "70")
     %p
-      = f.label :content, value: "記事の内容", class: "fonm-setting"
+      = f.label :content, value: "記事の内容", class: "form-setting"
       = f.text_area(:content, placeholder: "記事を入力してください", type: "text", class: "new-article-content-textfield", size: "70x20", wrap: "hard")
-    = f.submit(name: "commit", type: "submit", value: "Save", class: "form-bottun")
+    = f.submit(name: "commit", type: "submit", value: "Update", class: "form-bottun")

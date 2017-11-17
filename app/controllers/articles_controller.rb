@@ -6,6 +6,7 @@ class ArticlesController < ApplicationController
 
   def new
     @article = Article.new
+    render layout: 'admin'
   end
 
   def create
@@ -19,6 +20,7 @@ class ArticlesController < ApplicationController
 
   def edit
     @article = Article.find(params[:id])
+    render layout: 'admin'
   end
 
   def update

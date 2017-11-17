@@ -1,23 +1,12 @@
-.header
-  .global-menu
-
-.main
-  .contents
-    .articles.clearfix
-      = render @articles
-      = paginate(@articles)
-    .aside.clearfix
-      = render 'search'
-      = render 'links'
-      .new-articles
-        .new-articles__title 最新記事
-        %ul
-          = render partial: "new_article", collection: @new_articles
-      = render 'twitter'
-
-.footer
-  .footer__contents
-    .footer__contents__adress
-      株式会社ワークスアプリケーションズ　内定者公式ブログ
-    .footer__contents__copyright
-      Copyright PPP 2017.
+.contents
+  .articles.clearfix
+    = render @articles
+    = paginate(@articles)
+  .aside.clearfix
+    = render 'search'
+    = render 'links'
+    .new-articles
+      .new-articles__title 最新記事
+      %ul
+        = render partial: "new_article", collection: @new_articles
+    = render 'twitter'

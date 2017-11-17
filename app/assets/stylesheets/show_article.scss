@@ -1,0 +1,11 @@
+@import "colors.scss";
+@import "mixin.scss";
+
+.article {
+  background-color: $article-background;
+  position: relative;
+  padding: 32px 32px 40px 32px;
+  background-color: #fff;
+  margin: 40px auto;
+  width: 70%;
+}

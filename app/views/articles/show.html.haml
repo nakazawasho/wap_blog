@@ -1,2 +1,15 @@
-%p
-  = markdown(@article.content).html_safe
+.article__wrapper
+  .article
+    .article-entry-header
+      .article-entry-header__date
+        .fa.fa-clock-o
+        = @article.created_date
+      .article-entry-header__title
+        = link_to article_path(@article.id) do
+          =@article.title
+      .article-entry-header__genre
+        .fa.fa-folder-open
+          = @article.genre
+
+    %p
+      = markdown(@article.content).html_safe

@@ -1,0 +1,62 @@
+@import "colors.scss";
+@import "mixin.scss";
+
+.new-article-create-wrapper{
+  width: 800px;
+  margin: 30px auto 0;
+}
+
+.new-article-title-textfield{
+  border:0;
+  padding:10px;
+  font-size:1.3em;
+  font-family:Arial, sans-serif;
+  color:#aaa;
+  border:solid 1px #ccc;
+  margin:0 0 20px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.form-setting{
+  display: block;
+  color:#aaa;
+  font-family:Arial, sans-serif;
+  margin-bottom: 10px;
+}
+
+.new-article-content-textfield{
+  border:0;
+  padding:10px;
+  font-size:1.3em;
+  font-family:Arial, sans-serif;
+  color:#aaa;
+  border:solid 1px #ccc;
+  margin:0 0 20px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.form-bottun{
+  border:solid 1px #ccc;
+  padding:15px 30px;
+  margin:0 0 20px;
+  font-family:Arial, sans-serif;
+  font-size:1.2em;
+  text-transform:uppercase;
+  font-weight:bold;
+  color:#333;
+  cursor:pointer;
+  background-color: #7db4e6;
+}
+
+.new-article-title{
+  margin-bottom: 30px;
+  font-size: 40px;
+  padding: 0.25em 0.5em;/*上下 左右の余白*/
+  color: #494949;/*文字色*/
+  background: transparent;/*背景透明に*/
+  border-left: solid 5px #7db4e6;/*左線*/
+}
