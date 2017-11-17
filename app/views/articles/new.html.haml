@@ -1,0 +1,5 @@
+= form_for @article do |f|
+  = f.text_field(:title, placeholder: "記事のタイトルを入力してください", type: "text")
+  = f.text_field(:sub_title, placeholder: "記事のサブタイトルを入力してください", type; "text")
+  = f.text_field(:content, placeholder: "記事を入力してください", type: "text")
+  = f.submit(name: "commit", type: "submit", value: "Save")

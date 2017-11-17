@@ -26,6 +26,9 @@ gem 'therubyracer'
 gem 'execjs'
 gem 'kaminari'
 gem 'twitter'
+gem 'redcarpet'
+gem 'coderay'
+gem 'font-awesome-rails'
 
 group :development, :test do
   gem 'byebug', platform: :mri

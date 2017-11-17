@@ -9,7 +9,8 @@ class ArticlesController < ApplicationController
   end
 
   def create
-    Article.save(article_params)
+    Article.create(article_params)
+    redirect_to new_article_path
   end
 
   def show
@@ -31,6 +32,6 @@ class ArticlesController < ApplicationController
 
   private
   def article_params
-    params.permit(:titile, :genre, :content)
+    params.require(:article).permit(:title, :genre, :content)
   end
 end

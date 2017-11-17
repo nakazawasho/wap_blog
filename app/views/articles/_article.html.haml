@@ -1,8 +1,17 @@
 .article-entry
+
   .article-entry-header
     .article-entry-header__date
-      =article.created_date
+      .fa.fa-clock-o
+      = article.created_date
     .article-entry-header__title
-      =article.title
-  .content
-    =article.content
+      = link_to article_path(article.id) do
+        =article.title
+    .article-entry-header__genre
+      .fa.fa-folder-open
+        = article.genre
+
+  .article-entry-body
+    = image_tag("entry-article-image-sample.jpeg", size: "120x120", alt: "この画像は表示できません", class: "article-entry-body__image")
+    .article-entry-body__content
+      =article.sub_title

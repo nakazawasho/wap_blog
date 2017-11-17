@@ -1,6 +1,12 @@
 @import "colors.scss";
 @import "mixin.scss";
 
+//リンクの設定について
+a:link { color:$title-color; text-decoration:none }
+a:visited { color:$title-color; text-decoration:none }
+a:hover { color:$title-color; text-decoration:none }
+a:active { color:$title-color; text-decoration:none }
+
 .main {
   background-color: $main-background;
 }
@@ -25,10 +31,35 @@
 
   &-header {
 
+    &__date{
+      font-size: 80%;
+    }
+
     &__title {
+      margin-top: 10px;
       color: $title-color;
       font-weight: bold;
-      font-size: 18px;
+      font-size: 25px;
+    }
+
+    &__genre{
+      margin-top: 10px;
+      font-size: 80%;
+    }
+  }
+
+  &-body {
+    margin: 10px 0;
+    @include clearfix();
+
+    &__image{
+      float: left;
+      background-size: cover;
+      margin-right: 10px;
+    }
+
+    &__content{
+      float: left;
     }
   }
 }
