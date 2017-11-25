@@ -37,6 +37,7 @@
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
+  font-size: 12px;
 }
 
 .form-bottun{
@@ -59,4 +60,8 @@
   color: #494949;/*文字色*/
   background: transparent;/*背景透明に*/
   border-left: solid 5px #7db4e6;/*左線*/
+}
+
+p {
+  margin-top: 10px;
 }

@@ -16,6 +16,8 @@ class ArticlesController < ApplicationController
 
   def show
     @article = Article.find(params[:id])
+    @next_article = @article.next_page
+    @previous_article = @article.previous_page
   end
 
   def edit
@@ -30,6 +32,17 @@ class ArticlesController < ApplicationController
 
   def destroy
     Article.destroy(params[:id])
+  end
+
+  def search
+    if params[:genre]
+      # ジャンルによる検索
+      @articles = Article.where(genre: params[:genre]).page(params[:page]).per(8)
+    else
+      # キーワードによる検索
+      @articles = Article.where('title LIKE(?)', "%#{params[:search]}%").page(params[:page]).per(8)
+    end
+    render :index
   end
 
   private

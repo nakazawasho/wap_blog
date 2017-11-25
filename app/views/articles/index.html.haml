@@ -1,12 +1,6 @@
-.contents
-  .articles.clearfix
+.contents.clearfix
+  .articles
     = render @articles
-    = paginate(@articles)
-  .aside.clearfix
-    = render 'search'
-    = render 'links'
-    .new-articles
-      .new-articles__title 最新記事
-      %ul
-        = render partial: "new_article", collection: @new_articles
-    = render 'twitter'
+    .paginate-wrapper
+      = paginate(@articles)
+  = render 'aside'

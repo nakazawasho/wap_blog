@@ -1,15 +1,19 @@
-.article__wrapper
+.contents
   .article
-    .article-entry-header
-      .article-entry-header__date
-        .fa.fa-clock-o
-        = @article.created_date
-      .article-entry-header__title
-        = link_to article_path(@article.id) do
-          =@article.title
-      .article-entry-header__genre
-        .fa.fa-folder-open
-          = @article.genre
+    .article-entry
+      .article-entry-header
+        .article-entry-header__date
+          .fa.fa-clock-o
+          = @article.created_date
+        .article-entry-header__title
+          = link_to article_path(@article.id) do
+            = @article.title
+        .article-entry-header__genre
+          .fa.fa-folder-open
+            = @article.genre
 
-    %p
-      = markdown(@article.content).html_safe
+      .article-body
+        = markdown(@article.content).html_safe
+
+  = render 'next_previous'
+  = render 'aside'
