@@ -32,6 +32,7 @@ gem 'font-awesome-rails'
 gem 'rails_admin'
 gem 'cancan'
 
+
 group :development, :test do
   gem 'byebug', platform: :mri
 end

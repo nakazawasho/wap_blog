@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   get "/articles/search/:genre" => "articles#search"
   get "/articles/search" => "articles#search"
   resources :articles
+
 end

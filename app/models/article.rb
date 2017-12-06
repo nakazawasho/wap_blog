@@ -12,4 +12,9 @@ class Article < ApplicationRecord
   def previous_page
     Article.where('id < ?', self.id).order('id DESC').first
   end
+
+
+  def self.get_archive
+    return [10, 20, 30]
+  end
 end

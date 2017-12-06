@@ -10,21 +10,29 @@
   %body
     .header
       .header__title
-        .header__title__main 株式会社ワークスアプリケーションズ 内定者公式ブログ
+        = link_to articles_path do
+          .header__title__main 株式会社ワークスアプリケーションズ 内定者公式ブログ
         .header__title__sub 株式会社ワークスアプリケーションズ2018年入社予定者が、就活に関する考え、 インターンシップ情報、会社情報、その他の活動等を発信していくブログです。
 
       #menu
         .global-menu
-          .item
-            = link_to "2018年入社予定者インタビュー", "/articles/search/1"
-          .item
-            = link_to "パスホルダーインタビュー", "/articles/search/2"
-          .item
-            = link_to "Works Way Woker インタビュー", "/articles/search/3"
-          .item
-            = link_to "HATENK王インタビュー", "/articles/search/4"
-          .item
-            = link_to "その他会社に関する情報", "/articles/search/5"
+          -# .item
+          = link_to "/articles/search/1", class: "item" do
+            .item_test
+              2018年入社予定者インタビュー
+          = link_to "/articles/search/2", class: "item" do
+            .item_test
+              パスホルダーインタビュー
+          = link_to "/articles/search/3", class: "item" do
+            .item_test
+              Works Way Woker インタビュー
+          = link_to "/articles/search/4", class: "item" do
+            .item_test
+              HATENK王インタビュー
+          = link_to "/articles/search/5", class: "item" do
+            .item_test
+              その他会社に関する情報
+
     .main
       = yield
 

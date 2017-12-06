@@ -1,4 +1,6 @@
 class ArticlesController < ApplicationController
+  before_action :set_archive
+
   def index
     @articles = Article.page(params[:page]).per(8).order('created_at DESC')
     @new_articles = Article.order('created_at DESC').limit(5)
@@ -45,8 +47,15 @@ class ArticlesController < ApplicationController
     render :index
   end
 
+  def show
+  end
+
   private
   def article_params
     params.require(:article).permit(:title, :genre, :content)
+  end
+
+  def set_archive
+    @archives = Article.get_archive
   end
 end

@@ -1,19 +1,19 @@
 .contents
-  .article
-    .article-entry
-      .article-entry-header
-        .article-entry-header__date
+  .show__article
+    .show__article-entry
+      .show__article-entry-header
+        .show__article-entry-header__date
           .fa.fa-clock-o
           = @article.created_date
-        .article-entry-header__title
+        .show__article-entry-header__title
           = link_to article_path(@article.id) do
             = @article.title
-        .article-entry-header__genre
+        .show__article-entry-header__genre
           .fa.fa-folder-open
-            = @article.genre
+            = link_to "#{@article.genre}", "/articles/search/#{@article.genre}"
 
-      .article-body
+      .show__article-body
         = markdown(@article.content).html_safe
 
-  = render 'next_previous'
   = render 'aside'
+  = render 'next_previous'

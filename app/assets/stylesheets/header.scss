@@ -23,6 +23,7 @@
       font-size: 35px;
       display: inline-table;
       font-weight: bold;
+      color: #fff;
     }
 
     &__sub {
@@ -43,25 +44,23 @@
 .global-menu{
   display: table;
   width: 80%;
-  height: 60px;
   margin: auto;
 
   .item {
     &:hover {
       background-color: #ffffff;
-
-      a:hover {
+      .item_test {
         color: $title-color;
       }
     }
 
-    a:visited{
-      color: #ffffff;
+    &_test{
+        color: #ffffff;
     }
-
     text-align: center;
     vertical-align: middle;
     display: table-cell;
     font-weight: bold;
+    height: 60px;
   }
 }
