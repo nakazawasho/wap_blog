@@ -1,3 +1,4 @@
 .archive
   .archive__title アーカイブ
-  = render partial: "archive", collection: @articles
+  .archive__contents
+    = render partial: "archive", collection: @archives

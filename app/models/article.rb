@@ -13,8 +13,9 @@ class Article < ApplicationRecord
     Article.where('id < ?', self.id).order('id DESC').first
   end
 
-
   def self.get_archive
-    return [10, 20, 30]
+    @articles = self.group("YEAR(created_at)").group("MONTH(created_at)").group("DAY(created_at)").count()
+
   end
+
 end
