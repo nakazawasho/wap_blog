@@ -1,3 +1,3 @@
 .archive__content
-  = link_to root_paht
-  #{archive[0][0]}年#{archive[0][1]}月#{archive[0][2]}(#{archive[1]})
+  = link_to archive_articles_path(year: archive[0][0], month: archive[0][1]) do
+    #{archive[0][0]}年#{archive[0][1]}月(#{archive[1]})

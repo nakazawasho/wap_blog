@@ -14,8 +14,8 @@ class Article < ApplicationRecord
   end
 
   def self.get_archive
-    @articles = self.group("YEAR(created_at)").group("MONTH(created_at)").group("DAY(created_at)").count()
-
+    ordered_article = Article.all.order("created_at DESC")
+    archives = ordered_article.group("YEAR(created_at)").group("MONTH(created_at)").count()
   end
 
 end

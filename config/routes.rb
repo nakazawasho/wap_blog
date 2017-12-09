@@ -4,6 +4,10 @@ Rails.application.routes.draw do
   root 'articles#index'
   get "/articles/search/:genre" => "articles#search"
   get "/articles/search" => "articles#search"
-  resources :articles
+  resources :articles do
+    collection do
+      get 'archive'
+    end
+  end
 
 end
