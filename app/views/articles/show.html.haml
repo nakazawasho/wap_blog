@@ -15,5 +15,10 @@
       .show__article-body
         = markdown(@article.content).html_safe
 
+  %p#pageTop
+    %a{href:"#"}
+      %i.fa.fa-chevron-up
   = render 'aside'
   = render 'next_previous'
+
+

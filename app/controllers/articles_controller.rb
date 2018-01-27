@@ -47,9 +47,6 @@ class ArticlesController < ApplicationController
     render :index
   end
 
-  def show
-  end
-
   def archive
     search_day = "#{params[:year]}-#{params[:month]}-01"
     @articles = Article.where(created_at: "#{search_day}".in_time_zone.all_month).page(params[:page]).per(8).order('created_at DESC')
